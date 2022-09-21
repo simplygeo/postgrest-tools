@@ -1,4 +1,4 @@
-# Quickly enable PostgreSQL REST API with PostgREST.
+# Quickly Enable PostgreSQL REST API with PostgREST.
 
 This SQL script could be used to populate sample roles, sample table, enable login mechanism using JWT token.
 
