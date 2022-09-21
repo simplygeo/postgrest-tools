@@ -9,10 +9,10 @@ Usage:
     - pgjwt
     - postgis (optional, if you want to use spatial data with PostgREST > 10)
 3. Replace all occurence of these parameters with your own:
-    - authenticator pwd: \__authenticator_password__
-    - jwt key: \__jwt_key__
-    - authenticated user: \__authenticated_user__
-    - dbname: \__db_name__
+    - authenticator pwd: \_\_authenticator_password\_\_
+    - jwt key: \_\_jwt_key\_\_
+    - authenticated user: \_\_authenticated_user\_\_
+    - dbname: \_\_db_name\_\_
 4. Execute modified sql script inside your database, with postgres user
 
 
