@@ -29,3 +29,15 @@ Usage:
 4. Run it
 
     ./postgrest-install.sh
+
+
+### Test
+
+By the end of installation process:
+- PostgREST should be running as service, at port 3000
+- Anonymouse user could get /todos endpoint
+- User could login using /rpc/login endpoint
+    - try user: suneo@gmail.com, pwd: suneo (if you use default setting)
+    - we should get generated JWT token
+- User could get /gpstrack endpoint using generated token --> this is example of postgis spatial table
+
