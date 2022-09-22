@@ -41,4 +41,5 @@ By the end of installation process:
     - try user: suneo@gmail.com, pwd: suneo (if you use default setting)
     - we should get generated JWT token
 - User could get /gpstrack endpoint using generated token --> this is example of postgis spatial table
+- We could login to the database using user: authenticator, pwd: the one we define inside postgresql-install.sh
 
