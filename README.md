@@ -9,21 +9,20 @@ Usage:
 
 2. Modify postgresql-install.sh
 
-AUTHENTICATOR_PASSWORD: password for user 'authenticator'
+    AUTHENTICATOR_PASSWORD: password for user 'authenticator'
 
-JWT_KEY: JWT key (at least 32 byte random alphanumeric)
+    JWT_KEY: JWT key (at least 32 byte random alphanumeric)
 
-SAMPLE_USER: sample username
+    SAMPLE_USER: sample username
 
-DB_NAME: database name
+    DB_NAME: database name
 
-POSTGREST_BIN: PostgREST binary download URL, e.g. https://github.com/PostgREST/postgrest/releases/download/v10.0.0/postgrest-v10.0.0-linux-static-x64.tar.xz
+    POSTGREST_BIN: PostgREST binary download URL, e.g. https://github.com/PostgREST/postgrest/releases/download/v10.0.0/postgrest-v10.0.0-linux-static-x64.tar.xz
 
 3. Make it executable
 
-chmod +x ./postgrest-install.sh
+    chmod +x ./postgrest-install.sh
 
 4. Run it
 
-./postgrest-install.sh
-<br>
+    ./postgrest-install.sh
