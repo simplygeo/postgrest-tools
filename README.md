@@ -4,7 +4,8 @@ The SQL script could be used to populate sample roles, sample table, enable logi
 
 Usage:
 1. Download postgrest-install.sh
-2. Make it executable
-chmod +x ./postgrest-install.sh
-3. Run it
+- wget 
+3. Make it executable
+- chmod +x ./postgrest-install.sh
+4. Run it
 ./postgrest-install.sh
