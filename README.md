@@ -1,4 +1,5 @@
-# Quickly Run PostgREST with JWT Authentication
+# Quickly Run PostgREST with JWT Authentication - Ubuntu Linux
+(tested with Ubuntu 22.04 Jammy)
 
 The SQL script could be used to populate sample roles, sample table, enable login mechanism using JWT token.
 
