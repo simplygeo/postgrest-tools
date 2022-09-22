@@ -5,8 +5,6 @@
 -- 3. authenticated user: __sample_user__
 -- 4. dbname: __db_name__
 
--- notes
--- web_anon user couldn't access any resource, for login purposes only
 
 -- pre-requisite:
 -- db is exists, with name __db_name__
