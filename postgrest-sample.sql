@@ -42,7 +42,7 @@ insert into api.todos (task) values
 CREATE TABLE api.gpstrack (
 	id serial NOT NULL primary key,
 	ts timestamp NULL,
-	geom public.geometry(point, 4326) NULL,
+	geom geometry(point, 4326) NULL,
 	altitude int4 NULL,
 	hdop int4 NULL,
 	vdop int4 NULL,
