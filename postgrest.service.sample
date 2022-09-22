@@ -1,0 +1,10 @@
+	[Unit]
+	Description=REST API for any PostgreSQL database
+	After=postgresql.service
+
+	[Service]
+	ExecStart=/bin/postgrest /etc/postgrest.conf
+	ExecReload=/bin/kill -SIGUSR1 $MAINPID
+
+	[Install]
+	WantedBy=multi-user.target
