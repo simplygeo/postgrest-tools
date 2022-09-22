@@ -10,9 +10,13 @@ wget https://raw.githubusercontent.com/simplygeo/postgrest-tools/main/postgrest-
 2. Modify postgresql-install.sh
 
 AUTHENTICATOR_PASSWORD: password for user 'authenticator'
+
 JWT_KEY: JWT key (at least 32 byte random alphanumeric)
+
 SAMPLE_USER: sample username
+
 DB_NAME: database name
+
 POSTGREST_BIN: PostgREST binary download URL, e.g. https://github.com/PostgREST/postgrest/releases/download/v10.0.0/postgrest-v10.0.0-linux-static-x64.tar.xz
 
 3. Make it executable
