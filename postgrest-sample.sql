@@ -1,4 +1,4 @@
-```sql
+
 -- things have to be replaced
 -- 1. authenticator pwd: __authenticator_password__
 -- 2. jwt key: __jwt_key__
@@ -184,8 +184,8 @@ create or replace function
     
 	
 	
-	-- additional: auto reload schema cache
-	-- Create an event trigger function
+-- additional: auto reload schema cache
+-- Create an event trigger function
 CREATE OR REPLACE FUNCTION public.pgrst_watch() RETURNS event_trigger
   LANGUAGE plpgsql
   AS $$
@@ -197,7 +197,6 @@ $$;
 -- This event trigger will fire after every ddl_command_end event
 
 -- DROP EVENT TRIGGER IF EXISTS pgrst_watch;
-
 CREATE EVENT TRIGGER pgrst_watch
   ON ddl_command_end
   EXECUTE PROCEDURE public.pgrst_watch();
