@@ -5,7 +5,8 @@ PostgREST enable REST API with PostgreSQL backend.
 
 This tool could be used to populate sample roles, sample table, enable login mechanism using JWT token.
 
-Usage:
+## Usage:
+
 1. Download postgrest-install.sh
 
     wget https://raw.githubusercontent.com/simplygeo/postgrest-tools/main/postgrest-install.sh
@@ -31,7 +32,7 @@ Usage:
     ./postgrest-install.sh
 
 
-### Test
+## Test
 
 By the end of installation process:
 - PostgREST should be running as service, at port 3000
