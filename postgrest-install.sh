@@ -56,7 +56,7 @@ sleep 3
 echo "Download PostgREST..."
 wget -O postgrest.tar.xz $POSTGREST_BIN
 tar xvfJ ./postgrest.tar.xz
-mv postgrest /bin
+sudo mv postgrest /bin
 
 echo ""
 sleep 3
