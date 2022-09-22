@@ -66,4 +66,9 @@ sudo systemctl start postgrest
 sudo systemctl enable postgrest 
 sudo systemctl status postgrest
 
+# Cleaning....
+rm -rf ./pgjwt
+rm postgrest-sample.sql
+rm postgrest.conf
+rm postgrest.tar.xz
 
