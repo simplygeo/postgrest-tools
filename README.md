@@ -5,7 +5,7 @@ The SQL script could be used to populate sample roles, sample table, enable logi
 Usage:
 1. Download postgrest-install.sh
 
-wget https://raw.githubusercontent.com/simplygeo/postgrest-tools/main/postgrest-install.sh
+  wget https://raw.githubusercontent.com/simplygeo/postgrest-tools/main/postgrest-install.sh
 
 2. Modify postgresql-install.sh
 
