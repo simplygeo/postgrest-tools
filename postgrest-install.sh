@@ -13,7 +13,7 @@ echo ""
 echo "Downloading required packages..."
 sleep 3
 sudo apt update
-sudo apt install gnupg
+sudo apt install -y gnupg
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/postgresql-pgdg.list > /dev/null
 sudo apt update
