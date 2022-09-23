@@ -21,7 +21,7 @@ This tool could be used to populate sample roles, sample table, enable login mec
     
     PG_VERSION: PostgreSQL version (e.g. 12, 13, 14)
 
-    SAMPLE_USER: sample username (email would be <username>@gmail.com, password <username>)
+    SAMPLE_USER: sample username (email would be \<username\>@gmail.com, password \<username\>)
 
     DB_NAME: database name
 
