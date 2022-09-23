@@ -2,6 +2,7 @@
 (tested with Ubuntu 18.04 Bionic, 20.04 Focal, 22.04 Jammy)
 
 PostgREST enable REST API with PostgreSQL backend.
+
 We can choose PostgreSQL version (tested with version 12, 13, 14)
 
 This tool could be used to populate sample roles, sample table, enable login mechanism using JWT token.
