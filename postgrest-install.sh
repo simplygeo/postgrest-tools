@@ -1,17 +1,22 @@
 #!/bin/bash
 
-export AUTHENTICATOR_PASSWORD=nobitanobi
-export JWT_KEY=12345678901234567890123456789012
-export SAMPLE_USER=suneo
-export DB_NAME=geodb
-export POSTGREST_BIN=https://github.com/PostgREST/postgrest/releases/download/v10.0.0/postgrest-v10.0.0-linux-static-x64.tar.xz
+AUTHENTICATOR_PASSWORD=nobitanobi
+WT_KEY=12345678901234567890123456789012
+SAMPLE_USER=suneo
+PG_VERSION=14
+DB_NAME=geodb
+POSTGREST_BIN=https://github.com/PostgREST/postgrest/releases/download/v10.0.0/postgrest-v10.0.0-linux-static-x64.tar.xz
 
 
 echo ""
 echo "Downloading required packages..."
 sleep 3
 sudo apt update
-sudo apt install -y git postgresql-14 postgresql-server-dev-14 build-essential postgresql-14-postgis-3
+sudo apt install gnupg
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/postgresql-pgdg.list > /dev/null
+sudo apt update
+sudo apt install -y git postgresql-$PG_VERSION postgresql-server-dev-$PG_VERSION build-essential postgresql-$PG_VERSION-postgis-3
 
 echo ""
 echo "Preparing sql & config file..."
