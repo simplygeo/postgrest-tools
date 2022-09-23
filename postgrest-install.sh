@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# change these variables
 AUTHENTICATOR_PASSWORD=nobitanobi
 WT_KEY=12345678901234567890123456789012
 SAMPLE_USER=suneo
