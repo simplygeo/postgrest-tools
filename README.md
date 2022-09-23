@@ -1,7 +1,8 @@
 # Quickly Run PostgREST with JWT Authentication - Ubuntu Linux
-(tested with Ubuntu 22.04 Jammy)
+(tested with Ubuntu 18.04 Bionic, 20.04 Focal, 22.04 Jammy)
 
 PostgREST enable REST API with PostgreSQL backend.
+We can choose PostgreSQL version (tested with version 12, 13, 14)
 
 This tool could be used to populate sample roles, sample table, enable login mechanism using JWT token.
 
@@ -16,6 +17,8 @@ This tool could be used to populate sample roles, sample table, enable login mec
     AUTHENTICATOR_PASSWORD: password for user 'authenticator'
 
     JWT_KEY: JWT key (at least 32 byte random alphanumeric)
+    
+    PG_VERSION: PostgreSQL version (e.g. 12, 13, 14)
 
     SAMPLE_USER: sample username (email would be <username>@gmail.com, password <username>)
 
