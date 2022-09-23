@@ -11,7 +11,7 @@ echo ""
 echo "Downloading required packages..."
 sleep 3
 sudo apt update
-sudo apt install -y wget git ufw apache2 postgresql-14 postgresql-server-dev-14 build-essential postgresql-14-postgis-3
+sudo apt install -y git postgresql-14 postgresql-server-dev-14 build-essential postgresql-14-postgis-3
 
 echo ""
 echo "Preparing sql & config file..."
