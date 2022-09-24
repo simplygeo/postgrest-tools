@@ -13,7 +13,7 @@ echo ""
 echo "Downloading required packages..."
 sleep 3
 sudo apt update
-sudo apt install -y gnupg
+sudo apt install -y gnupg lsb-release
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/postgresql-pgdg.list > /dev/null
 sudo apt update
@@ -70,11 +70,19 @@ echo "Run PostgREST as service..."
 sudo wget -O /etc/systemd/system/postgrest.service https://raw.githubusercontent.com/simplygeo/postgrest-tools/main/postgrest.service.sample
 sudo systemctl start postgrest
 sudo systemctl enable postgrest 
-sudo systemctl status postgrest
+# sudo systemctl status postgrest
 
 # Cleaning....
 rm -rf ./pgjwt
 rm postgrest-sample.sql
 rm postgrest.conf
 rm postgrest.tar.xz
+
+echo "Check postgrest service status with:"
+echo "sudo systemctl status postgrest"
+echo "Done."
+
+
+
+
 
