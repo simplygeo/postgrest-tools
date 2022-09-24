@@ -80,5 +80,5 @@ rm postgrest.tar.xz
 
 echo "Done.
 echo ""
-echo "Check postgrest service status with:"
+echo "Check postgrest service status"
 echo "   sudo systemctl status postgrest"
