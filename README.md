@@ -1,5 +1,5 @@
-# Quickly Run PostgREST with JWT Authentication - Ubuntu Linux
-(tested with Ubuntu 18.04 Bionic, 20.04 Focal, 22.04 Jammy)
+# Quickly Run PostgREST with JWT Authentication - Ubuntu/Debian Linux
+(tested with Ubuntu (18.04 Bionic, 20.04 Focal, 22.04 Jammy) and Debian (10 Buster, 11 Bullseye)
 
 PostgREST enable REST API with PostgreSQL backend.
 
@@ -41,7 +41,7 @@ This tool could be used to populate sample roles, sample table, enable login mec
 ## Test
 
 By the end of installation process:
-- PostgREST should be running as service, at port 3000
+- PostgREST should be running as service, at port 3000, check with: sudo systemctl status postgrest
 - Anonymouse user could get /todos endpoint
 - User could login using /rpc/login endpoint
     - try user: suneo@gmail.com, pwd: suneo (if you use default setting)
