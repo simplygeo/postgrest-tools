@@ -78,7 +78,7 @@ rm postgrest-sample.sql
 rm postgrest.conf
 rm postgrest.tar.xz
 
-echo "Done.
+echo "Done."
 echo ""
 echo "Check postgrest service status"
 echo "   sudo systemctl status postgrest"
