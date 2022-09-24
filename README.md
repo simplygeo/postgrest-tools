@@ -12,6 +12,8 @@ This tool could be used to populate sample roles, sample table, enable login mec
 1. Download postgrest-install.sh
 
     wget https://raw.githubusercontent.com/simplygeo/postgrest-tools/main/postgrest-install.sh
+    
+    (if wget is not available yet, run: sudo apt update && sudo apt install wget)
 
 2. Modify postgresql-install.sh
 
